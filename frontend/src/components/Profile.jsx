@@ -22,6 +22,14 @@ setEditMode(false)
 
 }
 
+const cancelEdit = () => {
+  axios.get("https://gidy-profile-project-wda9.onrender.com/profile")
+  .then(res => {
+    setProfile(res.data);  
+    setEditMode(false);    
+  });
+};
+
 const toggleDarkMode = () => {
   setDarkMode(!darkMode);
 };
@@ -72,6 +80,7 @@ return (
 />
 
           <button onClick={updateProfile}>Save</button>
+          <button onClick={cancelEdit}>Cancel</button>
 
         </div>
 
