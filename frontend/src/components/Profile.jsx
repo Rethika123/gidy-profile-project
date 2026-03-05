@@ -23,11 +23,7 @@ setEditMode(false)
 }
 
 const cancelEdit = () => {
-  axios.get("https://gidy-profile-project-wda9.onrender.com/profile")
-  .then(res => {
-    setProfile(res.data);  
-    setEditMode(false);    
-  });
+  setEditMode(false);
 };
 
 const toggleDarkMode = () => {
