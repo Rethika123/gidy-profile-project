@@ -53,6 +53,17 @@ return (
             onChange={(e)=>setProfile({...profile,skills:e.target.value})}
           />
 
+          <input
+  placeholder="LinkedIn URL"
+  value={profile.linkedin || ""}
+  onChange={(e)=>setProfile({...profile,linkedin:e.target.value})}
+/>
+
+<input
+  placeholder="GitHub URL"
+  value={profile.github || ""}
+  onChange={(e)=>setProfile({...profile,github:e.target.value})}
+/>
           <button onClick={updateProfile}>Save</button>
 
         </div>

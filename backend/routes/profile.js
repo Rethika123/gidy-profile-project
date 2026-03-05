@@ -19,11 +19,11 @@ res.json(result[0]);
 
 router.put("/", (req,res)=>{
 
-const {name,bio,skills} = req.body
+const {name,bio,skills,linkedin,github} = req.body
 
 db.query(
-"UPDATE profile SET name=?, bio=?, skills=? WHERE id=1",
-[name,bio,skills],
+"UPDATE profile SET name=?, bio=?, skills=?, linkedin=?, github=?  WHERE id=1",
+[name,bio,skills,linkedin,github],
 (err,result)=>{
 
 if(err) return res.send(err)
