@@ -8,13 +8,13 @@ const [editMode,setEditMode] = useState(false);
 const [darkMode,setDarkMode] = useState(false);
 
 useEffect(()=>{
-axios.get("http://localhost:5001/profile")
+axios.get("https://gidy-profile-project-wda9.onrender.com/profile")
 .then(res => setProfile(res.data))
 },[])
 
 const updateProfile = () => {
 
-axios.put("http://localhost:5001/profile",profile)
+axios.put("https://gidy-profile-project-wda9.onrender.com/profile",profile)
 .then(()=>{
 alert("Profile Updated")
 setEditMode(false)
