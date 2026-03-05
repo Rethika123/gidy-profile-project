@@ -3,18 +3,13 @@ const router = express.Router();
 const db = require("../db");
 
 router.get("/", (req, res) => {
-
-db.query("SELECT * FROM profile LIMIT 1", (err, result) => {
-
-if (err) {
-console.log(err);
-return res.status(500).send("Database error");
-}
-
-res.json(result[0]);
-
-});
-
+  res.json({
+    name: "Rethika",
+    bio: "Full Stack Developer",
+    skills: "React, Node, Express",
+    linkedin: "https://linkedin.com",
+    github: "https://github.com"
+  });
 });
 
 router.put("/", (req,res)=>{
