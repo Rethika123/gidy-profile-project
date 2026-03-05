@@ -64,6 +64,13 @@ return (
   value={profile.github || ""}
   onChange={(e)=>setProfile({...profile,github:e.target.value})}
 />
+
+<input
+  placeholder="Profile Image URL"
+  value={profile.profile_picture || ""}
+  onChange={(e)=>setProfile({...profile,profile_picture:e.target.value})}
+/>
+
           <button onClick={updateProfile}>Save</button>
 
         </div>
@@ -73,10 +80,10 @@ return (
         <div>
 
           <img
-            className="profile-img"
-            src="https://i.pravatar.cc/150"
-            alt="profile"
-          />
+         className="profile-img"
+        src={profile.profile_picture || "https://i.pravatar.cc/150"}
+        alt="profile"
+        />
 
           <h2>{profile.name}</h2>
 
