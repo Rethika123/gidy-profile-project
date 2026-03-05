@@ -1,0 +1,83 @@
+body{
+background: yellow;
+}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f6f8;
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.profile-card{
+  background:white;
+  width:350px;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.profile-img{
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+.profile-card button{
+  margin: 8px;
+}
+
+.bio{
+  color:#555;
+  margin:10px 0;
+}
+
+.skills{
+  margin:10px 0;
+}
+
+.links{
+  margin:15px 0;
+}
+
+.links a{
+  margin:0 10px;
+  text-decoration:none;
+  color:#4f46e5;
+}
+
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:6px;
+  background:#4f46e5;
+  color:white;
+  cursor:pointer;
+}
+
+.edit-form input,
+.edit-form textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+.dark{
+  background:#121212;
+  color:white;
+}
+
+.dark .profile-card{
+  background:#1e1e1e;
+}
+
+.dark a{
+  color:#90caf9;
+}
